@@ -15,12 +15,14 @@ const images = [
     {
         name: 'Weather app',
         img: image2,
-        text:'React приложение для просмотр прогноза погоды по геолокации и запросу, работа с API open weather, Tailwind. '
+        text:'React приложение для просмотр прогноза погоды по геолокации и запросу, работа с API open weather, Tailwind. ',
+        link:'https://andrewhelegson.github.io/weather-app/'
     },
     {
         name: 'Todo лист',
         img: image3,
-        text:'Список дел с использованием react хуков  '
+        text:'Список дел с использованием react хуков  ',
+        link:'https://andrewhelegson.github.io/local-storage-todo-list-practice/'
     },
 ]
 
