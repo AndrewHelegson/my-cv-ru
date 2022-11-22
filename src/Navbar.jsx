@@ -49,32 +49,20 @@ const Navbar = (props) => {
     const [scrollTop, setScrollTop] = useState(0);
 
     const onScroll = () => {
-        // This will calculate how many pixels the page is vertically
         const winScroll = document.documentElement.scrollTop;
-        // This is responsible for subtracticing the total height of the page - where the users page is scrolled to
         const height =
             document.documentElement.scrollHeight -
             document.documentElement.clientHeight;
-
-        // This will calculate the final total of the percentage of how much the user has scrolled.
         const scrolled = (winScroll / height) * 100;
 
         setScrollTop(scrolled);
     };
 
     useEffect(() => {
-        // Fires when the document view has been scrolled
         window.addEventListener("scroll", onScroll);
-
         // 
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
-    /* const buttons = [
-        { label: 'Опыт работы' },
-        { label: 'Образование' },
-        { label: 'Tech stack' },
-        { label: 'Портфолио' }
-    ] */
     return (
         <Box id="title">
             <Button><Link
@@ -124,7 +112,7 @@ const Navbar = (props) => {
                                 )
                             })}
                             <Button><Link
-                                href="http://localhost:3002/"
+                                href="https://andrewhelegson.github.io/my-cv-en"
                                 underline="none" ><Typography
                                     color="#000000"
                                     sx={{
@@ -139,9 +127,9 @@ const Navbar = (props) => {
             <AppBar
                 sx={{
                     boxShadow: "none"
-                }} /* position='relative' */ >
+                }} >
                 <Stack
-                    /* sx={{ color: 'grey.500' }} */>
+                    >
                     <LinearProgress
                         color='secondary'
                         sx={{
